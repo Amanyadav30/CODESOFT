@@ -35,12 +35,18 @@ import javax.security.auth.Subject;
             {  
                 System.out.print(subjects[i] + " marks: ");
                 marks[i]=sc.nextInt();
+                if(marks[i]>100){
+                    System.out.println(BrightRed + "Marks is more than 100...?: "+ Reset);
+                    System.out.print("Enter again: ");
+                    marks[i]=sc.nextInt();
+                }
             }  
             for(int i=0; i<marks.length; i++){
                 total+=marks[i];
             } 
             avg =(float) total/n;
-            System.out.println(Green + "\nTotal marks: "+ total);
+            System.out.println(Green +"\nTotal marks: " + n*100);
+            System.out.println("Obtained marks: "+ total);
             System.out.println("Total Percentage: "+ avg +"%");
             if(avg>=90){
                 System.out.println("Grade: A+");
