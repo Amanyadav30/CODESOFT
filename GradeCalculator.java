@@ -1,6 +1,5 @@
-package code_soft.aman.grade_calculator;
-import java.util.*;
-
+package code_soft.java.grade_calculator;
+import java.util.Scanner;
 import javax.security.auth.Subject;
     class GradeCalculator{
 
